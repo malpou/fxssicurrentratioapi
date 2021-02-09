@@ -3,7 +3,7 @@ import express from "express";
 import { getCurrentRatio } from "./data/getCurrentRatio";
 
 const app = express();
-const port = 1377;
+const port = 5000;
 
 //app.use(cors());
 app.use(express.json());
