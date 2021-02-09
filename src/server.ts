@@ -13,16 +13,15 @@ const app = express();
 const port = 5000;
 
 app.use(express.json());
-
 app.get("/", async (_, res) => {
-  res.json(data ? data : "No data awailable");
+  res.json(data ? data : "No data available");
 });
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
 
-// Chron job to fetch data every 15th minuty
+// Chron job to fetch data every 15th minute
 chron.schedule("0,15,30,45 * * * *", async () => {
   data = await getCurrentRatio();
 });

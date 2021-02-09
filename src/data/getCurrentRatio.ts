@@ -88,7 +88,7 @@ export const getCurrentRatio = async (): Promise<CurrentRatioResponse> => {
       page
     )
   );
-
+  await browser.close();
 
   console.log("🔥 Data got updated!");
   return {
