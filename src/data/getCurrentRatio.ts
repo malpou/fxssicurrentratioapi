@@ -1,7 +1,7 @@
-import { CurrentRatioResponse } from "../types";
 import puppeteer from "puppeteer";
-import { getCurrencyPercentage } from "../utils/getCurrencyPercentage";
 import { baseCurrencySelector } from "../constants";
+import { CurrentRatioResponse } from "../types";
+import { getCurrencyPercentage } from "../utils/getCurrencyPercentage";
 
 export const getCurrentRatio = async (): Promise<CurrentRatioResponse> => {
   const browser = await puppeteer.launch();

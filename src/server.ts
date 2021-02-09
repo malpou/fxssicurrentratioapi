@@ -1,5 +1,5 @@
-import chron from "node-cron";
 import express from "express";
+import chron from "node-cron";
 import { getCurrentRatio } from "./data/getCurrentRatio";
 import { CurrentRatioResponse } from "./types";
 
