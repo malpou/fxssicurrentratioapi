@@ -22,7 +22,7 @@ app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
 
-// Chron job to fetch data at 6 & 18 o'clock
-chron.schedule("0 6,18 * * *", async () => {
+// Chron job to fetch data every 15th minuty
+chron.schedule("0,15,30,45 * * * *", async () => {
   data = await getCurrentRatio();
 });
