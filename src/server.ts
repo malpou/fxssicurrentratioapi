@@ -1,10 +1,9 @@
 import express from "express";
 //import cors from "cors";
 import { getCurrentRatio } from "./data/getCurrentRatio";
-require("dotenv").config();
 
 const app = express();
-const port = process.env.PORT || 1377;
+const port = 1377;
 
 //app.use(cors());
 app.use(express.json());
