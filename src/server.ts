@@ -1,12 +1,10 @@
 import express from "express";
-//import cors from "cors";
 import { getCurrentRatio } from "./data/getCurrentRatio";
 import { CurrentRatioResponse } from "./types";
 
 const app = express();
 const port = 5000;
 
-//app.use(cors());
 app.use(express.json());
 
 let data: CurrentRatioResponse | undefined;
