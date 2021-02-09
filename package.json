@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npm install --only=dev && tsc",
     "watch": "tsc -w",
     "dev": "nodemon dist/server.js",
     "start": "node dist/server.js"
